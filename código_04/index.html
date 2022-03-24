@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04</title>
+</head>
+
+<body>
+
+<script>
+    let nomeProduto = "Ração";
+    let quantidade = 10;
+    let preço = 10.00;
+    let totalpreço = quantidade * preço;
+    let descontos = [2, 3, 5]
+
+    if (quantidade <= 5) {
+        let porcent = (descontos[0] * totalpreço) / 100;
+        let desc = totalpreço - porcent;
+
+        document.write(nomeProduto + "<br>Quantidade: " + quantidade + "<br>Preço: " + preço + " R$<br>Preço Total: " + totalpreço + " R$ <br>Desconto a ser aplicado: " + descontos[0] + "% <br>Preço Com Desconto: " + desc + "R$")
+
+    } else if (quantidade > 5 && quantidade <= 10) {
+
+        let porcent = (descontos[1] * totalpreço) / 100;
+        let desc = totalpreço - porcent;
+
+        document.write(nomeProduto + "<br>Quantidade: " + quantidade + "<br>Preço: " + preço + " R$<br>Preço Total: " + totalpreço + "<br>Desconto a ser aplicado: " + descontos[1] + "% <br>Preço Com Desconto: " + desc)
+
+
+    } else if (quantidade > 10) {
+        let porcent = (descontos[2] * totalpreço) / 100;
+        let desc = totalpreço - porcent;
+
+        document.write(nomeProduto + "<br>Quantidade: " + quantidade + "<br>Preço: " + preço + " R$<br>Preço Total: " + totalpreço + "<br>Desconto a ser aplicado: " + descontos[2] + "% <br>Preço Com Desconto: " + desc)
+
+    }
+
+    </script>
+
+
+</body>
+
+</html>

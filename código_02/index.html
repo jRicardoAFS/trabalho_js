@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02</title>
+</head>
+
+<body>
+    <script>
+        let notsB = [8.0, 6.0, 10.0, 7.0];
+        let notsF = (notsB[0] + notsB[1] + notsB[2] + notsB[3]) / 4;
+
+        if (notsF >= 9.0) {
+            document.write("O aluno foi aprovado com média final: " + notsF)
+        } else if (notsF >= 7.5  &&notsF < 9.0) {
+            document.write("O aluno foi aprovado com média final: " + notsF)
+        } else if (notsF >= 6.0 && notsF < 7.5) {
+            document.write("O aluno está de recuperção com nota final: " + notsF)
+        } else if (notsF < 6.0 && notsF >= 0.0) {
+            document.write("O aluno foi reprovado com média final: " + notsF)
+        }
+
+
+    </script>
+
+</body>
+
+</html>
